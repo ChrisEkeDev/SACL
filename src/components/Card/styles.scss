@@ -1,0 +1,21 @@
+@import '../../App.scss';
+
+
+.card--wrapper {
+    box-shadow: $box-shadow;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    &:hover {
+        background-color: $hover;
+    }
+}
+
+.card--title {
+    margin-bottom: .25rem;
+}
+
+.card--body {
+    font-size: .85rem;
+    margin-bottom: 1rem;
+}

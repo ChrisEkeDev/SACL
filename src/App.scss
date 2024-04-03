@@ -1,0 +1,63 @@
+$main: #1b51a3;
+$placeholder: rgb(171, 171, 171);
+$heading-color: #343434;
+$body-color: #4a4a4a;
+$box-shadow: 1px 1px 5px 1px rgba(0,0,0,.05);
+$focus: 2px solid #98c0fa;
+$hover: #f4f4f4;
+$info: #1b51a3;
+$border: 1px solid $hover;
+$warning: #ffa135;
+$error: #ff2c2c;
+$success: #168d2a;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+  &:focus {
+    outline: $focus;
+  }
+}
+
+.icon {
+  height: 2rem;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+}
+
+.icon--big {
+  font-size: 1.75rem;
+}
+
+.icon--medium {
+  font-size: 1.5rem;
+}
+
+.icon--small {
+  font-size: 15rem;
+}
+
+.main--display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main--details {
+  background-color: $hover;
+}
+
+.article--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.article--title {
+  margin-bottom: .5rem;
+  color: $placeholder;
+}

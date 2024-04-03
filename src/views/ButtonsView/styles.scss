@@ -1,0 +1,8 @@
+@import '../../App.scss';
+
+.buttons--display {
+   display: grid !important;
+   grid-template-columns: 1fr 1fr 1fr !important;
+   gap: 6rem;
+   margin: 10rem 0
+}

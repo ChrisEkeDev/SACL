@@ -1,0 +1,37 @@
+@import '../../App.scss';
+
+.dialogue--wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialogue--modal {
+    width: 450px;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: $box-shadow;
+    padding: 1rem;
+}
+
+.dialogue--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialogue--body {
+    padding: .25rem 0 1.5rem;
+    font-size: .85rem;
+}
+
+.dialogue--icon{
+    background-color: white;
+    box-shadow: none;
+}

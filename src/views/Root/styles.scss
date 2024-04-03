@@ -1,0 +1,72 @@
+@import '../../App.scss';
+
+
+.app--wrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.app--header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: 1rem;
+    border-bottom: 1px solid $hover;
+}
+
+.app--title {
+    font-size: 1.5rem;
+}
+
+.app--navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-bottom: 1px solid $hover;
+    &::-webkit-scrollbar {
+        height: 0;
+    }
+}
+
+.navigation--list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navigation--link {
+    display: block;
+    font-size: .8rem;
+    padding: .5rem .75rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    color: $body-color;
+
+    &:hover {
+        background-color: $hover;
+        color: $main;
+    }
+}
+
+.active--link {
+    color: $main;
+    font-weight: 600;
+    background-color: $hover;
+}
+
+.app--main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.wrapper {
+    position: relative;
+}

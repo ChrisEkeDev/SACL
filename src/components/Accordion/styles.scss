@@ -1,0 +1,63 @@
+@import '../../App.scss';
+
+.accordion--wrapper {
+    width: 450px;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,.05);
+}
+
+.accordion--list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion_item--wrapper {
+    border-bottom: 1px solid $hover ;
+    transition: background .2s;
+    &:hover {
+        .accordion_item--header {
+            color: $main;
+        }
+        background-color: $hover;
+        color: $main;
+    }
+    &:first-of-type {
+       border-radius: 1rem 1rem  0 0;
+    }
+    &:last-of-type {
+        border: none;
+        border-radius: 0 0 1rem 1rem ;
+    }
+}
+
+.accordion_item--header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color .2s;
+    gap: .5rem;
+    cursor: pointer;
+    padding: 1rem;
+    color: $heading-color;
+    border-radius: .5rem;
+}
+
+.accordion_item--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $main;
+}
+.accordion_item--title {
+    font-size: 1rem;
+}
+
+
+.accordion_item--content {
+    color: $body-color;
+    font-size: .85rem;
+    padding: 0 1rem 1.5rem 1rem;
+    text-overflow: clip;
+}

@@ -1,0 +1,46 @@
+@import '../../App.scss';
+
+
+.alert--wrapper {
+    display: flex;
+    align-items: center;
+    //background-color: red;
+    padding: 0 0 0 .5rem;
+    // padding-left: 1rem;
+    border-radius: .5rem;
+    box-shadow: $box-shadow;
+
+    &:hover {
+        background-color: $hover;
+    }
+}
+
+.alert--icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: .5rem;
+}
+
+.alert--message {
+    margin-right: 3rem;
+    font-weight: 600;
+}
+
+.alert--close {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.alert--info {
+    color: $info;
+}
+.alert--warning {
+    color: $warning;
+}
+.alert--error {
+    color: $error;
+}
+.alert--success {
+    color: $success;
+}

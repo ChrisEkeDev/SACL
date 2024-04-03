@@ -1,0 +1,46 @@
+@import '../../App.scss';
+
+
+.carousel--wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.carousel--list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+        height: 0;
+    }
+}
+
+.carousel--announcement {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.carousel--item {
+    flex-shrink: 0;
+    padding: 1rem;
+}
+
+.carousel--icon {
+    position: absolute;
+}
+
+.icon--left {
+    left: 0rem
+}
+
+.icon--right {
+    right: 0rem
+}

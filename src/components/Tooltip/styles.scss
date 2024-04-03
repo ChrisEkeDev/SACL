@@ -1,0 +1,21 @@
+@import '../../App.scss';
+
+.tooltip--wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip--text {
+    position: absolute;
+    font-size: .7rem;
+    color: $body-color;
+    background-color: white;
+    padding: .5rem;
+    bottom: calc(100% + .5rem);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: .25rem;
+    box-shadow: $box-shadow;
+    z-index: 10;
+    white-space: nowrap;
+}

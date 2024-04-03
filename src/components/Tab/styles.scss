@@ -1,0 +1,60 @@
+@import '../../App.scss';
+
+.tabs--wrapper {
+    width: 450px;
+    box-shadow: $box-shadow;
+    // padding: 0 1rem;
+}
+
+.tabs--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $hover;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.tab--wrapper {
+    padding: 1rem;
+    flex: 1;
+    text-align: center;
+    color: $placeholder;
+    font-size: .85rem;
+    font-weight: bold;
+    border-right: 1px solid $hover;
+    cursor: pointer;
+    &:hover {
+        background-color: $hover;
+        color: $main;
+    }
+    &:first-of-type {
+        border-radius: .5rem 0 0 0;
+    }
+    &:last-of-type {
+        border-radius: 0 .5rem 0 0;
+        border: none;
+    }
+}
+
+.tab--selected {
+
+    // background-color: $main;
+    color: $main;
+}
+
+.tab--section {
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+    border-radius: 0 0 .5rem .5rem;
+    font-size: .85rem;
+}
+
+.tab--underline {
+    height: .25rem;
+    bottom: 0;
+    width: calc(100% - 1rem);
+    background-color: $main;
+    position: absolute;
+    left: .5rem;
+    border-radius: 1rem 1rem 0 0;
+}

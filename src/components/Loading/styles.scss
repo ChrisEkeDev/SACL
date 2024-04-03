@@ -1,0 +1,32 @@
+@import '../../App.scss';
+
+.loading--wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.loading--icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    color: $main;
+}
+
+
+.loading--label {
+    font-size: .75rem;
+    color: $placeholder;
+    font-weight: 600;
+}

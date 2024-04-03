@@ -1,0 +1,67 @@
+@import '../../App.scss';
+
+.button--wrapper {
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    line-height: 1rem;
+    cursor: pointer;
+    box-shadow: $box-shadow;
+    border: none;
+    border-radius: .5rem;
+    font-weight: 600;
+    transition: background .2s;
+
+    &:disabled {
+        pointer-events: none;
+        color: $body-color;
+        background-color: $focus;
+    }
+}
+
+.button--icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_button--wrapper {
+    height: 2rem;
+    aspect-ratio: 1;
+    cursor: pointer;
+    box-shadow: $box-shadow;
+    border: none;
+    border-radius: .5rem;
+    font-weight: 600;
+    transition: background .2s;
+
+    &:disabled {
+        pointer-events: none;
+        color: $body-color;
+        background-color: $focus;
+    }
+}
+
+.button--full {
+    width: 100%;
+    justify-content: center;
+}
+
+
+.primary {
+    background-color: $main;
+    color: white;
+
+    &:hover {
+        background-color: darken($color: $main, $amount: 10);
+    }
+}
+
+.secondary {
+    background-color: white;
+    color: $main;
+    &:hover {
+        background-color: darken($color: white, $amount: 5);
+    }
+}
